@@ -42,12 +42,12 @@ export default function App() {
       />
 
       <View style={styles.overlay}>
-        <Text style={styles.title}>EAN Reader</Text>
+        <Text style={styles.title}>Barcode reader</Text>
 
         <View style={styles.resultBox}>
           {ean ? (
             <>
-              <Text style={styles.resultLabel}>Scanned EAN: {ean}</Text>
+              <Text style={styles.resultLabel}>Scanned code: {ean}</Text>
               <TouchableOpacity style={styles.scanAgainButton} onPress={handleScanAgain}>
                 <Text style={styles.buttonText}>Scan Again</Text>
               </TouchableOpacity>
